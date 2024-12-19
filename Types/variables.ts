@@ -12,3 +12,12 @@ numCatLives = "dog"
 
 let gameOver: boolean = false;
 gameOver = true;
+
+// Type Inference
+
+let tvShow = "The Big Bang Theory";
+tvShow = false;
+
+let isFunny = false
+isFunny = true;
+isFunny = 5
