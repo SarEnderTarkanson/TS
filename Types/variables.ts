@@ -21,3 +21,23 @@ tvShow = false;
 let isFunny = false
 isFunny = true;
 isFunny = 5
+
+//the any type
+let thing: any = "hello";
+thing = 5;
+thing = false;
+thing();
+thing.toUpperCase()
+
+const movies = ["Arrival", "The Thing", "Aliens", "Amadeus"]
+
+let foundMovie : string;
+
+for(let movie of movies){
+    if(movie === "Amadeus"){
+        foundMovie = "Amadeus";
+    }
+}
+
+foundMovie();
+foundMovie = 1;
