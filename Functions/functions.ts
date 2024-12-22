@@ -9,3 +9,9 @@ function greet(person:string){
 }
 let person = "Alpy"
 console.log(greet(person))
+
+const doSomething = (person:string, age:number, isFunny:boolean) => {
+
+}
+
+doSomething("ChickenFace", 39, true)
