@@ -14,9 +14,9 @@ const doSomething = (person: string, age: number, isFunny: boolean) => {};
 
 doSomething("ChickenFace", 39, true);
 
-const add = (x:number, y:number):number => {
-    return x + y;
-}
+const add = (x: number, y: number): number => {
+  return x + y;
+};
 
 // function rando(num:number) {
 //     if (Math.random() < 0.5){
@@ -24,3 +24,9 @@ const add = (x:number, y:number):number => {
 //     }
 //     return num;
 // }
+
+const colors = ["red", "orange", "yellow"];
+
+colors.map((color) :string => {
+    return color.toUpperCase()
+});
