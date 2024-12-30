@@ -27,6 +27,11 @@ const add = (x: number, y: number): number => {
 
 const colors = ["red", "orange", "yellow"];
 
-colors.map((color) :string => {
-    return color.toUpperCase()
+colors.map((color): string => {
+  return color.toUpperCase();
 });
+
+function printTwice(msg: string): void {
+  console.log(msg);
+  console.log(msg);
+}
