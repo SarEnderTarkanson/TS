@@ -35,3 +35,13 @@ function printTwice(msg: string): void {
   console.log(msg);
   console.log(msg);
 }
+
+function MakeError(msg:string):never {
+  throw new Error(msg)
+}
+
+function gameLoop():never {
+  while(true){
+    console.log("Game loop running")
+  }
+}
