@@ -18,15 +18,35 @@
 
 // printName(singer); //TypeScript not displaying any error, which is unexpected, cos it actually should
 
-type Point= {
-  x:number;
-  y: number;
+// type Point= {
+//   x:number;
+//   y: number;
+// }
+
+// let coordinate: Point = { x: 36, y: 42 };
+
+// function randomCoordinate(): Point {
+//   return { x: Math.random(), y: Math.random() };
+// }
+
+// randomCoordinate()
+
+type Song = {
+  title: string;
+  artist: string;
+  numStreams: number;
+  credits: {
+    producer: string;
+    writer: string;
+  };
+};
+
+function calculatePayout(song: Song): number {
+  return song.numStreams * 0.003;
 }
 
-let coordinate: Point = { x: 36, y: 42 };
-
-function randomCoordinate(): Point {
-  return { x: Math.random(), y: Math.random() };
+function printSong(song:Song):void {
+  console.log(`${song.title} - ${song.artist}`)
 }
 
-randomCoordinate()
+printSong()
