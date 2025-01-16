@@ -45,8 +45,14 @@ function calculatePayout(song: Song): number {
   return song.numStreams * 0.003;
 }
 
-function printSong(song:Song):void {
-  console.log(`${song.title} - ${song.artist}`)
+function printSong(song: Song): void {
+  console.log(`${song.title} - ${song.artist}`);
 }
 
-printSong()
+type Point = {
+  x: number;
+  y: number;
+  z?: number;
+};
+
+const myPoint: Point = { x: 1, y: 3 };
