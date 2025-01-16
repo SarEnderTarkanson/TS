@@ -64,6 +64,37 @@ type User = {
 
 const user: User = { id: 12867, username: "SarEnderTarkanson" };
 
-console.log(user)
+console.log(user);
 
-user.id = 3456643
+user.id = 3456643;
+
+type Circle = {
+  radius: number;
+};
+
+type Colorful = {
+  color: string;
+};
+
+type ColorfulCircle = Circle & Colorful;
+
+const happyFace: ColorfulCircle = {
+  radius: 20,
+  color: "yellow",
+};
+
+type Cat = {
+  numLives: number;
+};
+
+type Dog = {
+  breed: string;
+};
+
+type CatDog = Cat & Dog & { age: number };
+
+const cristy: CatDog = {
+  numLives: 9,
+  breed: "golden retriever",
+  age: 10
+}
