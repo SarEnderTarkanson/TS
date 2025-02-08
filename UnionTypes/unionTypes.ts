@@ -28,3 +28,16 @@ function calculateTax(price: number | string, tax: number) {
   }
   return price * tax;
 }
+
+// const nums:number[] = [1,2,3,4]
+
+// const stuff:any[] = [1,2,3,4, true, {}, "asd"]
+
+// const stuff: (number | string)[] = [5, "asd"]
+
+// const stuff2: number[] | string[] =[5, ""]
+
+const coords2: (Point3 |Loc) [] = []
+
+coords2.push({lat:321.213, long:23.334})
+coords2.push({x:234, y:234})
