@@ -37,7 +37,26 @@ function calculateTax(price: number | string, tax: number) {
 
 // const stuff2: number[] | string[] =[5, ""]
 
-const coords2: (Point3 |Loc) [] = []
+const coords2: (Point3 | Loc)[] = [];
 
-coords2.push({lat:321.213, long:23.334})
-coords2.push({x:234, y:234})
+coords2.push({ lat: 321.213, long: 23.334 });
+coords2.push({ x: 234, y: 234 });
+
+//Literal Types
+
+let zero: 0 = 0;
+
+let mood: "Happy" | "Sad" = "Happy";
+
+mood = "Sad";
+
+type DayOfWeek =
+  | "Monday"
+  | "Tuesday"
+  | "Wednesday"
+  | "Thursday"
+  | "Friday"
+  | "Saturday"
+  | "Sunday";
+
+let today: DayOfWeek = "Friday";
