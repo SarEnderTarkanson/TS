@@ -14,3 +14,18 @@ const responses: HTTPResponse[] = [
   [404, "NotFound"],
   [401, "UnAuthorized"],
 ];
+
+enum OrderStatus {
+  PENDING,
+  SHIPPED,
+  DELIVERED = 23,
+  RETURNED,
+}
+
+const myStatus = OrderStatus.DELIVERED;
+
+function isDelivered(status: OrderStatus) {
+  return status === OrderStatus.DELIVERED;
+}
+
+isDelivered(OrderStatus.PENDING)
