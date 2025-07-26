@@ -18,7 +18,7 @@ const responses: HTTPResponse[] = [
 enum OrderStatus {
   PENDING,
   SHIPPED,
-  DELIVERED = 23,
+  DELIVERED,
   RETURNED,
 }
 
@@ -28,4 +28,15 @@ function isDelivered(status: OrderStatus) {
   return status === OrderStatus.DELIVERED;
 }
 
-isDelivered(OrderStatus.PENDING)
+isDelivered(OrderStatus.PENDING);
+
+enum ArrowKeys {
+  UP = "up",
+  DOWN = "down",
+  RIGHT = "right",
+  LEFT = "left",
+  ERROR = 400
+}
+
+ArrowKeys.LEFT
+ArrowKeys.ERROR
